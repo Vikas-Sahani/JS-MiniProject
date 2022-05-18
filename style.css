@@ -1,0 +1,424 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    /* font-size: 23px; */
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* body{background: red;} */
+    #login{
+        position: relative;
+        left: 19%;
+    }
+
+    #container{
+        height: 276px;
+    }
+
+    .content1, .content2, .content3 {
+        height: 25%;
+        width: 55%;
+    }
+    
+    input {
+        border: 1px solid rgb(244, 202, 67);
+        width: 12vw;
+    }
+
+    #motiv{
+        margin-top: 40%;
+    }
+
+    .content1 .slide1, .content2 .slide2, .content3 .slide3 {
+        width: 30px;
+        height: 30px;        
+    }
+    .slide1 span, .slide2 span, .slide3 span {
+        line-height: 30px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width:700px){
+    /* body{background: green;} */
+    #login{
+        position: relative;
+        left: 34%;
+    }
+
+    #container{
+        height: 307px;
+    }
+
+    .content1, .content2, .content3 {
+        height: 27%;
+        width: 56%;
+    }
+    
+    input {
+        border: 1px solid rgb(244, 202, 67);
+        width: 12vw;
+    }
+
+    #motiv{
+        margin-top: 32%;
+    }
+
+    .content1 .slide1, .content2 .slide2, .content3 .slide3 {
+        width: 30px;
+        height: 30px;        
+    }
+    .slide1 span, .slide2 span, .slide3 span {
+        line-height: 30px;
+    }
+  }
+
+  @media only screen and (min-width:701px) and (max-width:800px) {
+    /* body{background: aqua ;} */
+
+    #login{
+    position: relative;
+    left: 40%;
+    }
+
+    #container{
+        height: 325px;
+    }
+
+    .content1, .content2, .content3 {
+        height: 28%;
+        width: 57%;
+    }
+    
+    input {
+        border: 1px solid rgb(244, 202, 67);
+        width: 12vw;
+    }
+
+    #motiv{
+        margin-top: 28%;
+    }
+
+    .content1 .slide1, .content2 .slide2, .content3 .slide3 {
+        width: 30px;
+        height: 30px;        
+    }
+    .slide1 span, .slide2 span, .slide3 span {
+        line-height: 30px;
+    }
+  }
+
+  @media only screen and (min-width:801px) and (max-width:900px) {
+      /* body{background:blue;} */
+      #login{
+        position: relative;
+        left: 46%;
+        }
+    
+        #container{
+            height: 350px;
+        }
+    
+        .content1, .content2, .content3 {
+            height: 29%;
+            width: 57%;
+        }
+        
+        input {
+            border: 1px solid rgb(244, 202, 67);
+            width: 12vw;
+        }
+    
+        #motiv{
+            margin-top: 27%;
+        }
+    
+        .content1 .slide1, .content2 .slide2, .content3 .slide3 {
+            width: 30px;
+            height: 30px;        
+        }
+        .slide1 span, .slide2 span, .slide3 span {
+            line-height: 30px;
+        }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 901px) and (max-width:1000px) {
+    /* body{background: orange;} */
+    #login{
+        position: relative;
+        left: 51%;
+        }
+    
+        #container{
+            height: 375px;
+        }
+    
+        .content1, .content2, .content3 {
+            height: 31%;
+            width: 57%;
+        }
+        
+        input {
+            border: 1px solid rgb(244, 202, 67);
+            width: 13vw;
+        }
+    
+        #motiv{
+            margin-top: 25%;
+        }
+    
+        .content1 .slide1, .content2 .slide2, .content3 .slide3 {
+            width: 30px;
+            height: 30px;        
+        }
+        .slide1 span, .slide2 span, .slide3 span {
+            line-height: 30px;
+        }
+
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1001px) and (max-width:1200px) {
+    /* body{background: pink;} */
+
+    #login{
+        position: relative;
+        left: 55%;
+        }
+    
+        #container{
+            height: 400px;
+        }
+    
+        .content1, .content2, .content3 {
+            height: 31%;
+            width: 57%;
+        }
+        
+        input {
+            border: 1px solid rgb(244, 202, 67);
+            width: 14vw;
+        }
+    
+        #motiv{
+            margin-top: 25%;
+        }
+    
+        .content1 .slide1, .content2 .slide2, .content3 .slide3 {
+            width: 42px;
+            height: 42px;        
+        }
+        .slide1 span, .slide2 span, .slide3 span {
+            line-height: 42px;
+        }
+    }
+
+    @media only screen and (min-width: 1201px) and (max-width:1600px) {
+        /* body{background: white;} */
+
+        #login{
+            position: relative;
+            left: 62%;
+        }
+
+        #container{
+            height: 475px;
+        }
+
+        .content1, .content2, .content3 {
+            height: 30.3%;
+            width: 58.2%;
+        }
+        
+        input {
+            border: 5px solid rgb(244, 202, 67);
+            width: 15vw;
+        }
+
+        #motiv{
+            margin-top: 27%;
+        }
+
+        .content1 .slide1, .content2 .slide2, .content3 .slide3 {
+            width: 45px;
+            height: 45px;        
+        }
+        .slide1 span, .slide2 span, .slide3 span {
+            line-height: 45px;
+        }
+    }
+
+
+body{
+    border: 3px solid black;
+    overflow-x: hidden;
+}
+nav{
+    border: 2px solid rebeccapurple;
+    height: 5%;
+    padding: 19px;
+    background-color: rgb(255, 51, 0);
+}
+nav>a{
+    text-decoration: none;
+    margin: 2%;
+    font-weight: bold;
+    color: white;
+}
+nav>a:hover{
+    background-color: white;
+    color: red;
+    padding: 3px;
+    border-radius: 10px;
+    /* width: 19%; */
+}
+/* #login{
+    position: relative;
+    left: 48%;
+} */
+h1{
+    /* border: 4px solid rebeccapurple; */
+    /* text-align: center; */
+    font-size: 30px;
+    margin-top: 2%;
+}
+p{
+    /* border: 4px solid gray; */
+    text-align: left;
+    position: relative;
+    left: 1%;
+}
+ol{
+    /* border: 4px solid gold; */
+    text-align: left;
+    position: relative;
+    left: 5%;
+}
+li{
+    /* border: 4px solid yellow; */
+}
+#container{
+    border: 4px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#Left{
+    /* border: 4px solid red; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    align-items: center;
+}
+input{
+    /* border: 4px solid rgb(244, 202, 67); */
+    padding: 0.75%;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    margin: 0.5%;
+    /* width: 15vw; */
+    position: absolute;
+    z-index: 1;
+}
+#Left img{
+    width: 98%;
+    padding: 2%;
+    cursor:pointer;
+
+}
+#Right{
+    /* border: 4px solid blue; */
+    width: 80%;
+    background-color: black;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.content1, .content2, .content3 {
+    /* height: 50%;
+    width:58.5%; */
+    position:absolute;
+    padding: 8.2% 10%;
+    /* border: 2px solid red ; */
+    background-color: black;
+}
+.content1>.images1, .content2>.images2, .content3>.images3{
+    border: 4px solid rgb(141, 255, 118);
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+.images1>img, .images2>img, .images3>img{
+    height: 100%;
+    width: 100%;
+ }
+.content1 .slide1, .content2 .slide2, .content3 .slide3{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius: 40%;
+    border:4px solid rgb(216, 152, 152);
+    background: rgba(255, 255,255, 0.1);
+    cursor: pointer;    
+}
+.content1 .slide1:hover, .content2 .slide2:hover, .content3 .slide3:hover{
+    background: rgba(255, 255, 255, 0.707);
+}
+.content1 .left1, .content2 .left2, .content3 .left3{
+    left: 1%;
+}
+.content1 .right1, .content2 .right2, .content3 .right3{
+    right: 1%;
+}
+.slide1 span, .slide2 span, .slide3 span{
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btm-sliders1, .btm-sliders2, .btm-sliders3{
+    border: 4px solid rgb(7, 7, 6);
+    position: absolute;
+    bottom: 1%;
+    left:50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+.btm-sliders1 span, .btm-sliders2 span, .btm-sliders3 span{
+    border: 4px solid rgba(2, 255, 200, 0.879);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin:0 3px;
+    cursor:pointer;
+}
+/* why it's not working? */
+.btm-sliders1 span:hover, .btm-sliders2 span:hover, .btm-sliders3 span:hover{
+    background-color: rgb(255, 255, 255);
+}
+footer{
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+footer>a{
+    text-decoration: none;
+    margin: 2%;
+    font-weight: bold;
+    color: white;
+}
+footer>a:hover{
+    background-color: white;
+    color: blue;
+    padding: 3px;
+    border-radius: 10px;
+    /* width: 19%; */
+}
