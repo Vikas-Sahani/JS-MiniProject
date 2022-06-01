@@ -4,10 +4,11 @@
     font-family:Arial, Helvetica, sans-serif;
     /* font-size: 23px; */
 }
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (min-width: 375px) and (max-width: 600px) { */
     /* body{background: red;} */
-    #login{
+    /* #login{
         position: relative;
         left: 19%;
     }
@@ -37,12 +38,12 @@
     .slide1 span, .slide2 span, .slide3 span {
         line-height: 30px;
     }
-  }
+  } */
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) and (max-width:700px){
+  /* @media only screen and (min-width: 600px) and (max-width:700px){ */
     /* body{background: green;} */
-    #login{
+    /* #login{
         position: relative;
         left: 34%;
     }
@@ -72,11 +73,11 @@
     .slide1 span, .slide2 span, .slide3 span {
         line-height: 30px;
     }
-  }
+  } */
 
-  @media only screen and (min-width:701px) and (max-width:800px) {
+  /* @media only screen and (min-width:701px) and (max-width:800px) { */
     /* body{background: aqua ;} */
-
+/* 
     #login{
     position: relative;
     left: 40%;
@@ -107,11 +108,11 @@
     .slide1 span, .slide2 span, .slide3 span {
         line-height: 30px;
     }
-  }
+  } */
 
-  @media only screen and (min-width:801px) and (max-width:900px) {
+  /* @media only screen and (min-width:801px) and (max-width:900px) { */
       /* body{background:blue;} */
-      #login{
+      /* #login{
         position: relative;
         left: 46%;
         }
@@ -142,11 +143,11 @@
             line-height: 30px;
         }
   }
-  
+   */
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 901px) and (max-width:1000px) {
+  /* @media only screen and (min-width: 901px) and (max-width:1000px) { */
     /* body{background: orange;} */
-    #login{
+    /* #login{
         position: relative;
         left: 51%;
         }
@@ -177,12 +178,12 @@
             line-height: 30px;
         }
 
-  } 
+  }  */
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1001px) and (max-width:1200px) {
+  /* @media only screen and (min-width: 1001px) and (max-width:1200px) { */
     /* body{background: pink;} */
-
+/* 
     #login{
         position: relative;
         left: 55%;
@@ -213,11 +214,11 @@
         .slide1 span, .slide2 span, .slide3 span {
             line-height: 42px;
         }
-    }
+    } */
 
-    @media only screen and (min-width: 1201px) and (max-width:1600px) {
+    /* @media only screen and (min-width: 1201px) and (max-width:1600px) { */
         /* body{background: white;} */
-
+/* 
         #login{
             position: relative;
             left: 62%;
@@ -248,11 +249,10 @@
         .slide1 span, .slide2 span, .slide3 span {
             line-height: 45px;
         }
-    }
-
+    } */
 
 body{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     overflow-x: hidden;
 }
 nav{
@@ -305,12 +305,14 @@ li{
     flex-direction: row;
     margin-top: 2%;
     margin-bottom: 2%;
+    width: 100%;
+    height:100vh;
 }
 #Left{
     /* border: 4px solid red; */
-    width: 20%;
     display: flex;
     flex-direction: column;
+    flex: 1;
     overflow: scroll;
     align-items: center;
 }
@@ -329,19 +331,23 @@ input{
     width: 98%;
     padding: 2%;
     cursor:pointer;
-
 }
+#motiv{
+    margin-top: 15%;
+}
+
 #Right{
-    /* border: 4px solid blue; */
-    width: 80%;
     background-color: black;
-    /* display: flex;
+    flex: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; */
+    
 }
 .content1, .content2, .content3 {
-    /* height: 50%;
-    width:58.5%; */
+    height: 70%;
+    width:65%;
     position:absolute;
     padding: 8.2% 10%;
     /* border: 2px solid red ; */
@@ -400,9 +406,9 @@ input{
     cursor:pointer;
 }
 /* why it's not working? */
-.btm-sliders1 span:hover, .btm-sliders2 span:hover, .btm-sliders3 span:hover{
+/* .btm-sliders1 span:hover, .btm-sliders2 span:hover, .btm-sliders3 span:hover{
     background-color: rgb(255, 255, 255);
-}
+} */
 footer{
     background-color: blue;
     display: flex;
@@ -421,4 +427,89 @@ footer>a:hover{
     padding: 3px;
     border-radius: 10px;
     /* width: 19%; */
+}
+
+/* for iPhone SE */
+@media screen and (max-width:480px) {
+/* @media screen and (max-width:480px) { */
+    input{
+        margin-top: 5%;
+        position: relative;
+    }
+    nav{
+        font-size: 14px;
+        width: 91%;
+    }
+    h1{
+        color:red;
+        font-size: 20px;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        width: 100%;
+    }
+    #Left{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        /* overflow: scroll; */
+        align-items: center;
+    }
+   
+    #Right{
+        flex: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    p, ol{
+        width: 85%;
+        height: 30vh;
+        position: relative;
+        left: 10%;
+    }
+
+    .content1, .content2, .content3 {
+        height: 60%;
+        width:80%;
+        position:absolute;
+        padding: 5% 10%;
+        background-color: black;
+
+    }
+    
+    /* .images1, .images2, .images3{
+        width: 100%;
+        height: 100%;
+    } */
+    .content1 .slide1, .content2 .slide2, .content3 .slide3{
+        display: none;
+    }
+
+    .content1 .left1, .content2 .left2, .content3 .left3{
+        width: 15px;
+        height: 15px;
+    }
+    .slide1 span, .slide2 span, .slide3 span{
+        line-height: 15px;
+        font-size: 20px;
+    }
+    .btm-sliders1, .btm-sliders2, .btm-sliders3{
+        position: relative;
+        bottom: -15%;
+        left: 50%;
+        width: 50%;
+    }
+    footer{
+        font-size: 14px;
+        width: 102%;
+    }
 }
