@@ -10,20 +10,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="#" id="home">HOME</a>
-        <a href="#" id="about">ABOUT US</a>
-        <a href="#" id="contact">CONTACT US</a>
-        <a href="#" id="login">LOGIN</a>
-    </nav>
-    <marquee scrollamount="3" behavior="alternate">
+    <div class="bdy">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="text">Message</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="camera-outline"></ion-icon>
+                        </span>
+                        <span class="text">Photos</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+
+    <marquee scrollamount="10" behavior="alternate">
         <h1>Dialogues and Motivations</h1> 
     </marquee>     
     <p>In this world, everyone is working and some times we feel Motivated and some 
         times we feel Demotivated. So for doing continously work we need some 
-        Motvation/Entertainment. Someone feel Motivated:-</p>
+        Motvation / Entertainment. Someone feel Motivated:-</p>
     <ol>
-        <li>when he/she saw a movies which has awesome dialogues, Figthing sequences, funny movements, Emotional seen .</li>
+        <li>when he/she saw a movies which has awesome dialogues, Figthing sequences, funny movements, Emotional seen.</li>
         <li>when saw/listen a magical quotes which touches to our heart and make our mind peaceful</li>
         <li>And many more ways to stay Motivated</li>
     </ol> 
@@ -123,5 +165,17 @@
     <script src="script1.js"></script>
     <script src="script2.js"></script>                             
     <script src="script3.js"></script>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item)=>item.classList.remove('active'));
+            this.classList.add('active');
+            console.log(this);
+        }
+        list.forEach((item)=>item.addEventListener('click', activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
