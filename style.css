@@ -15,7 +15,7 @@ body{
 .bdy{
     /* position: fixed; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     min-height: 25vh;
     background:var(--clr);
@@ -289,9 +289,9 @@ footer>a:hover{
     .bdy{
         width: 380px;
     }
-    /* .navigation{
-        width: 350px;
-    } */
+    #motivImg,#bollyHolly{
+        display: none;
+    }
     .navigation ul{
         width: 350px;
     }
