@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#">
+                    <a href="#"  id="profile">
                         <span class="icon">
                             <ion-icon name="person-outline"></ion-icon>
                         </span>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#">
+                    <a href="#" id="photos">
                         <span class="icon">
                             <ion-icon name="camera-outline"></ion-icon>
                         </span>
@@ -60,7 +60,7 @@
         <div id="bollyHolly"><img src="./image/HollyBolly.png" alt=""></div>
     </div>
 
-    <marquee scrollamount="10" behavior="alternate">
+    <marquee scrollamount="30" behavior="alternate">
         <h1>Dialogues and Motivations</h1> 
     </marquee>     
     <p>In this world, everyone is working and some times we feel Motivated and some 
@@ -160,9 +160,10 @@
         wheel of cycle, so that any of these think can't go ahead
     </p>
     <footer>
-        <a href="#">FaceBook</a>
-        <a href="#">Linkdin</a>
-        <a href="#">GitHub</a>
+        <a href="https://www.facebook.com/vikas.sahani.18847876/" target="_blank">FaceBook</a>
+        <a href="https://www.linkedin.com/in/vikas-sahani/" target="_blank">Linkdin</a>
+        <a href="https://github.com/Vikas-Sahani" target="_blank">GitHub</a> <br/>
+       <div> <p style="text-align: center;">@copyright vikassahani1110@gmail.com 2022</p></div>
     </footer>
     <script src="script1.js"></script>
     <script src="script2.js"></script>                             
@@ -173,9 +174,26 @@
         function activeLink(){
             list.forEach((item)=>item.classList.remove('active'));
             this.classList.add('active');
-            console.log(this);
+            // console.log(this);
         }
         list.forEach((item)=>item.addEventListener('click', activeLink));
+
+        const profile = document.querySelector('#profile');
+        profile.addEventListener('click', function(){
+            setTimeout(function(){
+                profile.setAttribute('href', './Resume/index.html')
+            }, 0);
+            console.log(profile)
+        })
+            
+        const photos = document.querySelector('#photos');
+        photos.addEventListener('click', function(){
+            setTimeout(function(){
+                photos.setAttribute('href', '#container')
+            }, 0)
+            console.log(photos)
+        })
+        
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
